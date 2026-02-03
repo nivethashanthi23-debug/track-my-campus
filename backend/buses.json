@@ -1,0 +1,59 @@
+{
+  "mahendra engineering college": {
+    "b157": {
+      "status": "On Time",
+      "reason": "-",
+      "stops": [
+        { "name": "Ariyalur", "time": 10 },
+        { "name": "Jayakondam", "time": 8 },
+        { "name": "College Gate", "time": 0 }
+      ]
+    },
+    "b76": {
+      "status": "Delayed",
+      "reason": "Traffic",
+      "stops": [
+        { "name": "Mecheri", "time": 12 },
+        { "name": "Omalur", "time": 10 },
+        { "name": "Aatayampatti", "time": 8 },
+        { "name": "College Gate", "time": 0 }
+      ]
+    },
+    "b68": {
+      "status": "Delayed",
+      "reason": "Heavy Traffic",
+      "stops": [
+        { "name": "Seelanayakanpatti", "time": 10 },
+        { "name": "Dasanayakanpatti", "time": 8 },
+        { "name": "Mallur", "time": 5 },
+        { "name": "College Gate", "time": 0 }
+      ]
+    }
+  },
+  "mahendra institute of technology": {
+    "m12": {
+      "status": "On Time",
+      "reason": "-",
+      "stops": [
+        { "name": "Koyambedu", "time": 10 },
+        { "name": "Tech Gate", "time": 0 }
+      ]
+    },
+    "m23": {
+      "status": "Delayed",
+      "reason": "Construction",
+      "stops": [
+        { "name": "T. Nagar", "time": 15 },
+        { "name": "Tech Gate", "time": 0 }
+      ]
+    },
+    "m65": {
+      "status": "On Time",
+      "reason": "-",
+      "stops": [
+        { "name": "Anna Nagar", "time": 12 },
+        { "name": "Main Gate", "time": 0 }
+      ]
+    }
+  }
+}
