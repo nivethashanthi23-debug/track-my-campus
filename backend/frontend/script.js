@@ -44,7 +44,6 @@ if (window.location.pathname.includes("trackbus.html")) {
     window.location.href = "index.html";
   }
 }
-
 /**************** BUS DATA LOAD ****************/
 let busData = {};
 let timer = null;
