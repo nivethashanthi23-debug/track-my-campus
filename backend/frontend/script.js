@@ -10,6 +10,20 @@ function login() {
   const password = document.getElementById("password").value.trim();
   const type = document.getElementById("userType").value;
   const msg = document.getElementById("loginMessage");
+  function trackBus() {
+  const bus = document.getElementById("bus").value;
+  const stop = document.getElementById("stop").value;
+
+  fetch(`/track?bus=${bus}&stop=${stop}`)
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("result").innerText =
+        `Bus ${data.bus} will reach ${data.nextStop} in ${data.eta}`;
+    })
+    .catch(err => {
+      console.log(err);
+    });
+}
 
   if (
     users[email] &&
