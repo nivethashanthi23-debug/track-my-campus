@@ -48,7 +48,7 @@ if (window.location.pathname.includes("trackbus.html")) {
 let busData = {};
 let timer = null;
 
-fetch("https://YOUR-RENDER-LINK.onrender.com/api/buses")
+fetch("https://YOUR-BACKEND-RENDER-URL/api/buses")
   .then(res => res.json())
   .then(data => {
     busData = data;
