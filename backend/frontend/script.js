@@ -1,3 +1,9 @@
+function normalize(str) {
+  return str
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, " ");
+}
 function trackBus() {
   const college = document.getElementById("collegeName").value.trim().toLowerCase();
   const busNo = document.getElementById("busNumber").value.trim().toLowerCase();
