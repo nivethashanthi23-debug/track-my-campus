@@ -6,6 +6,22 @@ function trackBus() {
   console.log("College entered:", college);
   console.log("Bus entered:", busNo);
   console.log("Available data:", busData);
+  /**************** BUS DATA LOAD ****************/
+let busData = {};
+let timer = null;
+
+fetch("https://track-my-campus-2.onrender.com/api/buses")
+  .then(res => {
+    if (!res.ok) throw new Error("API failed");
+    return res.json();
+  })
+  .then(data => {
+    busData = data;
+    console.log("Bus data loaded:", busData);
+  })
+  .catch(err => {
+    console.error("Bus fetch error", err);
+  });
 
   if (!busData || Object.keys(busData).length === 0) {
     result.innerHTML = "❌ Bus data not loaded";
